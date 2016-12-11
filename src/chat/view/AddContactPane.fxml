@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chat.controller.AddContactController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="addContactLabel1" text="Insert contact to add:">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="addContactTextField" />
+            <Button fx:id="addContactButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#addContact" text="Add contact" />
+            <Label fx:id="addContactLabel2" text="Label">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin></Label>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

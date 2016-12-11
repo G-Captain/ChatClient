@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="contactBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chat.controller.MainPaneController">
+   <top>
+      <MenuBar fx:id="contactMenuBar" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+	           	<MenuItem fx:id="contactMenuItemLogIn" mnemonicParsing="false" text="Log in" />
+	           	<MenuItem fx:id="contactMenuItemRegister" mnemonicParsing="false" text="Register" />
+	           	<MenuItem fx:id="contactMenuItemLogOut" mnemonicParsing="false" text="Log out" />
+              	<MenuItem fx:id="contactMenuItemClose" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Contacts">
+            <items>
+              <MenuItem fx:id="contactMenuItemAddContact" mnemonicParsing="false" onAction="#clickToAdd" text="Add contact" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <ListView fx:id="contactListView" onContextMenuRequested="#goToScreen4" onMouseClicked="#goToScreen3" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
